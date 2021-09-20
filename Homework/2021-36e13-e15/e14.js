@@ -1,10 +1,10 @@
 function doIt(x){
     if(x == true){
-        console.log("world")
+        return()=> console.log('world!')
     }
     else if(x == false){
-        console.log("hello")
+        return()=>console.log("hello")
     }
 }
-doIt(false) // outputs hello
-doIt(true)  // outputs world
+doIt(false)(); // outputs hello
+doIt(true)();  // outputs world

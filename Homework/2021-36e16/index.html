@@ -7,10 +7,12 @@
 </head>
 <body>
 <script>
-    for (const property in Object.getOwnPropertyNames(window)) {
-        document.write(`${property}: ${Object.getOwnPropertyNames(window)[property]}` +"<br>");
+    for (let key in window) {
+        document.write('Key = ' + key + '<br>')
+        document.write('Value = ' +window[key] + '<br>')
     }
-    console.log(this)//antaa tiedoston paikan tietokoneella
+    window.key1 = "donald duck"
+    console.log(this)//window
     console.log(this == window) //True
 </script>
 </body>
